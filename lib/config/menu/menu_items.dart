@@ -26,5 +26,11 @@ const appMenuItems = <MenuItem>[
     subTitle: 'Visa',
     link: '/cards',
     icon: Icons.credit_card,
-  )
+  ),
+  MenuItem(
+    title: 'Progess',
+    subTitle: 'Circular progress',
+    link: '/progress',
+    icon: Icons.refresh_rounded,
+  ),
 ];
