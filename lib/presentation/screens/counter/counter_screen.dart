@@ -16,7 +16,9 @@ class CounterScreen extends ConsumerWidget {
       body: _CounterView(clickCounter: clickCounter),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
-        onPressed: () {},
+        onPressed: () {
+          ref.read(counterProvider.notifier).update((state) => state + 1);
+        },
       ),
     );
   }
